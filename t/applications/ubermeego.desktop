@@ -1,0 +1,16 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=ubermeego
+Name[en]=englishmeego
+Name[de]=deutschmeego
+GenericName=Uber Program
+Icon=ubericon
+Comment=View ANYTHING
+Exec=/usr/bin/python2.5 -c "import sys; print \"uberalles:\", sys.argv[1:]"
+Terminal=false
+Type=Application
+MimeType=text/plain;
+X-Maemo-Service=uber.program
+X-MeeGo-Translation-Catalog=test
+X-MeeGo-Logical-Id=some.other.action
+NotShowIn=X-MeeGo;

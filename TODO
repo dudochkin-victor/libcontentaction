@@ -1,0 +1,10 @@
+Todos and enhancement ideas
+===========================
+
+-- Take a look at the "back" operation in service fw
+-- Allow a way to set default actions
+   - Think about mime type localization (tracker-based ones)
+   - Provide the needed APIs
+   - Make a ui?
+-- Watch relevant files/dirs for changes
+-- Provide some useful regexps / tracker-queries

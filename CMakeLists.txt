@@ -1,0 +1,49 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+CMAKE_POLICY(VERSION 2.6)
+SET(CMAKE_BUILD_TYPE Debug)
+PROJECT(libcontentaction)
+SET(PKG_VERSION 0.1.39.1)
+
+SET(CMAKE_MODULE_PATH ${CMAKE_SOURCE_DIR}/CMake/Modules)
+INCLUDE( ${CMAKE_SOURCE_DIR}/CMake/Modules/TargetDistclean.cmake)
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_BINARY_DIR})
+
+FIND_PACKAGE(PkgConfig)
+
+#FIND_PACKAGE(Gettext)
+
+SET(PKG_DATADIR ${CMAKE_INSTALL_PREFIX}/share/${RPOJECT_NAME})
+SET(LOCALEDIR ${CMAKE_INSTALL_PREFIX}/share/locale)
+SET(PKG_BINDIR ${CMAKE_INSTALL_PREFIX}/bin)
+SET(PKG_LIBDIR ${CMAKE_INSTALL_PREFIX}/lib)
+SET(DATA_DIR ${PKG_DATADIR}/data)
+
+#install (FILES "${CMAKE_SOURCE_DIR}/data/markov.txt" "${CMAKE_SOURCE_DIR}/data/words.txt"        
+#         DESTINATION ${DATA_DIR})
+
+#ADD_SUBDIRECTORY(libcontextprovider)
+#ADD_SUBDIRECTORY(libcontextsubscriber)
+#ADD_SUBDIRECTORY(spec)
+#ADD_SUBDIRECTORY(python)
+#ADD_SUBDIRECTORY(tools)
+ADD_SUBDIRECTORY(src)
+
+IF (ENABLE_DOC)
+    ADD_SUBDIRECTORY(doc)
+ENDIF()
+
+########### Add pkgconfig target ###############
+CONFIGURE_FILE(
+  "${CMAKE_CURRENT_SOURCE_DIR}/contentaction-0.1.pc.in"
+  "${CMAKE_CURRENT_BINARY_DIR}/contentaction-0.1.pc"
+  IMMEDIATE @ONLY)
+INSTALL(FILES ${CMAKE_CURRENT_BINARY_DIR}/contentaction-0.1.pc DESTINATION lib/pkgconfig/)
+
+########### Add uninstall target ###############
+CONFIGURE_FILE(
+  "${CMAKE_CURRENT_SOURCE_DIR}/CMake/cmake_uninstall.cmake.in"
+  "${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake"
+  IMMEDIATE @ONLY)
+ADD_CUSTOM_TARGET(uninstall
+  "${CMAKE_COMMAND}" -P "${CMAKE_CURRENT_BINARY_DIR}/cmake_uninstall.cmake") 
+

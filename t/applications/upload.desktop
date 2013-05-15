@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=uploadname
+X-MeeGo-Translation-Catalog=test
+X-MeeGo-Logical-Id=upload.to.album
+Terminal=false
+Type=Application
+MimeType=x-maemo-nepomuk/image;
+Exec=/bin/true
+NotShowIn=X-MeeGo;

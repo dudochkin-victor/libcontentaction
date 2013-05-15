@@ -1,0 +1,10 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=showname
+X-MeeGo-Translation-Catalog=test
+X-MeeGo-Logical-Id=com.nokia.imageviewer.show
+Terminal=false
+Type=Application
+MimeType=x-maemo-nepomuk/image;
+Exec=/bin/true
+NotShowIn=X-MeeGo;

@@ -1,0 +1,360 @@
+libcontentaction (0.1.39) unstable; urgency=low
+
+  * Configuration update: sparql snippet for software-application
+  * Fixes: NB#208279
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Mon, 10 Jan 2011 13:19:13 +0200
+
+libcontentaction (0.1.38) unstable; urgency=low
+
+  * Confguration update: defaults.list
+  * Fixes: NB#211462
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Mon, 03 Jan 2011 16:06:59 +0200
+
+libcontentaction (0.1.37) unstable; urgency=low
+
+  * Fixes: NB#203949
+  * Added Action::triggerWithWait() which will wait until the reply comes
+    when launching actions via D-Bus. Work-around for a D-Bus bug,
+    https://bugs.freedesktop.org/show_bug.cgi?id=896.
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Tue, 07 Dec 2010 15:56:28 +0200
+
+libcontentaction (0.1.36) unstable; urgency=low
+
+  * Fixes: NB#207895
+  * Added x-maemo-nepomuk/device-captured-video
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Thu, 02 Dec 2010 13:27:08 +0200
+
+libcontentaction (0.1.35) unstable; urgency=low
+
+  * API addition: Action::actionsForString(const QString&)
+  * API addition: Action::defaultActionForString(const QString&)
+  * Enabling defining regexps specialCaseOf="another-regexp"
+  * Configuration update: defaults.list
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Wed, 01 Dec 2010 16:11:31 +0200
+
+libcontentaction (0.1.34) unstable; urgency=low
+
+  * Configuration update: regexp for phone number
+  * Configuration update: added feed-url, ftp-url, ovi-store-url
+  * Fixes: NB#191300
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Mon, 29 Nov 2010 12:00:30 +0200
+
+libcontentaction (0.1.33) unstable; urgency=low
+
+  * QT_NO_KEYWORDS
+  * Configuration update: regexp for phone number
+  * Fixes: NB#191300
+  * Don't use QDBusInterface when triggering D-Bus actions (workaround, QTBUG-14485)
+  
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Thu, 28 Oct 2010 13:59:32 +0300
+
+libcontentaction (0.1.32) unstable; urgency=low
+
+  * Doc update.
+  * Making regexps case-insensitive.
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Thu, 07 Oct 2010 10:23:24 +0300
+
+libcontentaction (0.1.31) unstable; urgency=low
+
+  * Storing regexps in order; enables prioritizing specific ones over generic ones.
+  * Added missing _aegis file for tests
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Wed, 29 Sep 2010 09:18:23 +0300
+
+libcontentaction (0.1.30) unstable; urgency=low
+
+  * Configuration update: regexp for ovi music urls
+  * Re-reading mimeinfo.cache
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Fri, 24 Sep 2010 14:53:02 +0300
+
+libcontentaction (0.1.29) unstable; urgency=low
+
+  * Fixes: NB#191392
+  * Fixes: NB#191945
+  * Configuration update: e-mail address regexps
+  * Fixes: NB#191957
+  
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Thu, 23 Sep 2010 10:37:25 +0300
+
+libcontentaction (0.1.28) unstable; urgency=low
+
+  * Added 2 Action::launcherAction functions.
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Fri, 17 Sep 2010 13:17:13 +0300
+
+libcontentaction (0.1.27) unstable; urgency=low
+
+  * Fixes: NB#192179
+  * Merging the highlighter tool hl1 into lca-tool (lca-tool --highlight)
+  
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Thu, 16 Sep 2010 11:53:09 +0300
+
+libcontentaction (0.1.26) unstable; urgency=low
+
+  * Fixes: NB#191945
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Wed, 15 Sep 2010 10:14:26 +0300
+
+libcontentaction (0.1.25) unstable; urgency=low
+
+  * Fixes: NB#191791
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Tue, 14 Sep 2010 12:10:12 +0300
+
+libcontentaction (0.1.24) unstable; urgency=low
+
+  * Configuration update: regexps
+  * Fixes: NB#191491
+  * Fixes: NB#191290
+  * Fixes: NB#179385
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Mon, 13 Sep 2010 13:04:21 +0300
+
+libcontentaction (0.1.23) unstable; urgency=low
+
+  * Fixes: NB#190808
+  * lca doesn't get confused if defaults.list contains nonexistent applications
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Mon, 13 Sep 2010 09:36:06 +0300
+
+libcontentaction (0.1.22) unstable; urgency=low
+
+  * Fixing double %-escaping of special characters.
+  * Defaults.list update
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Mon, 06 Sep 2010 10:12:26 +0300
+
+libcontentaction (0.1.21) unstable; urgency=low
+
+  * Configuration update: http-url regexp.
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Fri, 03 Sep 2010 12:19:00 +0300
+
+libcontentaction (0.1.20) unstable; urgency=low
+
+  * Configuration update.
+  * Fixes: NB#189612
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Wed, 01 Sep 2010 12:43:48 +0300
+
+libcontentaction (0.1.19) unstable; urgency=low
+
+  * Small doc fix: .desktop keys were out of date.
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Wed, 01 Sep 2010 11:50:39 +0300
+
+libcontentaction (0.1.18) unstable; urgency=low
+
+  * Remove duplicate actions: now it's ok to declare both x-maemo-nepomuk
+    mime types and the corresponding real mime types in a .desktop file.
+  * Fixes: NB#186435
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Mon, 30 Aug 2010 10:39:56 +0300
+
+libcontentaction (0.1.17) unstable; urgency=low
+
+  * Assume "file" scheme if none given.
+  * Fixes: NB#180448
+  * Fixes: NB#187474
+
+ -- Akos PASZTORY <ext-akos.pasztory@nokia.com>  Thu, 26 Aug 2010 10:38:29 +0300
+
+libcontentaction (0.1.16) unstable; urgency=low
+
+  * Return Icon and Name even for invalid actions.
+
+ -- Akos PASZTORY <ext-akos.pasztory@nokia.com>  Wed, 18 Aug 2010 12:49:36 +0300
+
+libcontentaction (0.1.15) unstable; urgency=low
+
+  * Added an API file, whatever it is.
+  * Fixes: NB#178110
+
+ -- Akos PASZTORY <ext-akos.pasztory@nokia.com>  Thu, 12 Aug 2010 13:05:22 +0300
+
+libcontentaction (0.1.14) unstable; urgency=low
+
+  * Removed a few useless pseudo-mime-based defaults.
+  * Fix l10n test to reset locale.
+  * Fixes: NB#176951
+  * Fixes: NB#182502
+
+ -- Akos PASZTORY <ext-akos.pasztory@nokia.com>  Thu, 12 Aug 2010 09:55:20 +0300
+
+libcontentaction (0.1.13) unstable; urgency=low
+
+  * Added highlight regexps for http url, email address and phone number.
+  * Fixes: NB#179385
+
+ -- Akos PASZTORY <ext-akos.pasztory@nokia.com>  Tue, 13 Jul 2010 14:08:45 +0300
+
+libcontentaction (0.1.12) unstable; urgency=low
+
+  * Fixes: NB#172570
+  * Fixes: NB#178763
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Thu, 08 Jul 2010 11:22:26 +0300
+
+libcontentaction (0.1.11) unstable; urgency=low
+
+  * Hack for extracting an uri from nfo:Bookmark and getting actions for it.
+  * Highlighter: combine actions from different regexps when multiple of them match.
+
+ -- Marja Hassinen <marja.hassinen@nokia.com>  Wed, 16 Jun 2010 09:02:11 +0300
+
+libcontentaction (0.1.10) unstable; urgency=low
+
+  * X-Maemo-Fixed-Params supported also for the MApplication::launch method.
+
+ -- Marja Hassinen <ext-marja.2.hassinen@nokia.com>  Wed, 09 Jun 2010 10:56:01 +0300
+
+libcontentaction (0.1.9) unstable; urgency=low
+
+  * Fixed missing exports.
+
+ -- Marja Hassinen <ext-marja.2.hassinen@nokia.com>  Wed, 09 Jun 2010 10:55:52 +0300
+
+libcontentaction (0.1.8) unstable; urgency=low
+
+  * Updating defaults.list
+
+ -- Marja Hassinen <ext-marja.2.hassinen@nokia.com>  Fri, 28 May 2010 14:58:32 +0300
+
+libcontentaction (0.1.7) unstable; urgency=low
+
+  * Updating defaults.list
+
+ -- Marja Hassinen <ext-marja.2.hassinen@nokia.com>  Tue, 25 May 2010 15:30:24 +0300
+
+libcontentaction (0.1.6) unstable; urgency=low
+
+  * Consider actions based on nie:mimeType for Tracker resources
+    (passing nie:url as argument).
+  * Configuration files moved from /etc to /usr/share/contentaction
+  * Fixes: NB#163135
+
+ -- Akos PASZTORY <ext-akos.pasztory@nokia.com>  Thu, 20 May 2010 10:00:48 +0300
+
+libcontentaction (0.1.5) unstable; urgency=low
+
+  * Stopped using libtracker-client; using tracker D-Bus interface directly.
+  * Actions for launching nfo:SoftwareApplication uris.
+
+ -- Marja Hassinen <ext-marja.2.hassinen@nokia.com>  Thu, 29 Apr 2010 16:55:55 +0300
+
+libcontentaction (0.1.4) unstable; urgency=low
+
+  * Update configure assertion to libtracker-client-0.9
+
+ -- Jean-Luc Lamadon <jean-luc.lamadon@nokia.com>  Tue, 27 Apr 2010 18:43:24 +0300
+
+libcontentaction (0.1.3) unstable; urgency=low
+
+  * API for getting the default action for a mime type.
+
+ -- Marja Hassinen <ext-marja.2.hassinen@nokia.com>  Mon, 26 Apr 2010 08:38:55 +0300
+
+libcontentaction (0.1.2) unstable; urgency=low
+
+  * API for getting a list of actions for a mime type, and setting an
+    action as a default.
+  * Fixes: NB#164714 - No fallback-if-no-default for scheme actions
+  * Migrating from Dui to MeeGoTouch.
+  * Added a virtual package lca-tool.
+  
+ -- Marja Hassinen <ext-marja.2.hassinen@nokia.com>  Tue, 20 Apr 2010 14:06:47 +0300
+
+libcontentaction (0.1.1) unstable; urgency=low
+
+  * Added Conflicts against libcontentaction-dui-dev
+
+ -- Jean-Luc Lamadon <jean-luc.lamadon@nokia.com>  Thu, 25 Mar 2010 17:06:49 +0200
+
+libcontentaction (0.1.0) unstable; urgency=low
+
+  * All actions are defined in .desktop files.
+  * Tracker-based conditions and highlighter regexps are defined in the
+    configuration files.
+  * New API to create Action:s for URI schemes (like mailto:).
+  * Defaultness related methods of Action are gone, there is a new API for
+    setting defaults.
+  * Added functions to selectively highlight and remove all highlighting
+    from DuiLabels.
+  * lca-tool synopsis changed.
+  * New binary package: libcontentaction-data, containing configuration files.
+  * Package libcontentaction-dui removed, now libcontentaction depends on
+    libdui unconditionally.
+
+ -- Akos PASZTORY <ext-akos.pasztory@nokia.com>  Mon, 22 Mar 2010 10:01:25 +0200
+
+libcontentaction (0.0.8.1) unstable; urgency=low
+
+  * Update build dependency to libtracker-client to reflect binary package renaming
+
+ -- Jean-Luc Lamadon <jean-luc.lamadon@nokia.com>  Fri, 12 Mar 2010 13:52:11 +0200
+
+libcontentaction (0.0.8) unstable; urgency=low
+
+  * Documentation update
+  * Bugfix: missing g_type_init()
+
+ -- Marja Hassinen <ext-marja.2.hassinen@nokia.com>  Thu, 25 Feb 2010 11:25:33 +0200
+
+libcontentaction (0.0.7) unstable; urgency=low
+
+  * API additions: defaultActionForFile, actionsForFile taking in the mime
+    type of the file and not trying to read the file themselves.
+
+ -- Marja Hassinen <ext-marja.2.hassinen@nokia.com>  Wed, 24 Feb 2010 10:27:26 +0200
+
+libcontentaction (0.0.6) unstable; urgency=low
+
+  * New binary package: libcontentaction-dui0
+    Containing DUI related functionality.
+
+ -- Akos PASZTORY <ext-akos.pasztory@nokia.com>  Thu, 18 Feb 2010 09:13:06 +0200
+
+libcontentaction (0.0.5) unstable; urgency=low
+
+  * API additions: defaultActionForFile, actionsForFile
+  * Actions for desktop files (launch the corresponding app)
+  * Implemented: SWP#CntFr-421, SWP#CntFr-411
+
+ -- Marja Hassinen <ext-marja.2.hassinen@nokia.com>  Wed, 17 Feb 2010 10:51:15 +0200
+
+libcontentaction (0.0.4) unstable; urgency=low
+
+  * Using dui service mapper and service implementors directly, without generated .so's.
+  * API additions for searching for actions for textual elements.
+  * Implemented: SWP#CntFr-414, SWP#CntFr-412
+
+ -- Marja Hassinen <ext-marja.2.hassinen@nokia.com>  Thu, 28 Jan 2010 13:49:17 +0200
+
+libcontentaction (0.0.3) unstable; urgency=low
+
+  * Class -> action association made configurable.
+  * Exported symbols corrected.
+
+ -- Akos PASZTORY <ext-akos.pasztory@nokia.com>  Tue, 12 Jan 2010 10:54:25 +0200
+
+libcontentaction (0.0.2) unstable; urgency=low
+
+  * New package: libcontentaction-doc
+
+ -- Marja Hassinen <ext-marja.2.hassinen@nokia.com>  Fri, 11 Dec 2009 12:11:20 +0200
+
+libcontentaction (0.0.1) unstable; urgency=low
+
+  * Initial release.
+  * Implemented: SWP#CntFr-384
+
+ -- Marja Hassinen <ext-marja.2.hassinen@nokia.com>  Wed, 09 Dec 2009 17:05:01 +0200
+
